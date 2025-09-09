@@ -1,0 +1,109 @@
+.soporte-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.soporte-container.oscuro {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.soporte-sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #2c3e50, #1a2530);
+  color: white;
+  padding: 20px;
+}
+
+.soporte-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.soporte-sidebar button:hover {
+  background: #2980b9;
+}
+
+.soporte-main {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.oscuro .soporte-main {
+  background-color: #121212;
+}
+
+.soporte-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.perfil-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.foto-perfil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu-opciones {
+  position: relative;
+}
+
+.menu-boton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.menu-desplegable {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.oscuro .menu-desplegable {
+  background: #2c2c2c;
+}
+
+.menu-desplegable button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.menu-desplegable button:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.menu-desplegable .eliminar {
+  color: red;
+}

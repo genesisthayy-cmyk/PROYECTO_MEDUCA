@@ -1,0 +1,62 @@
+/* Contenedor principal */
+.solicitudes-soporte-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del panel */
+.titulo-panel-soporte {
+  color: #1890ff;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Tabla */
+.table-container-soporte {
+  margin-top: 20px;
+}
+
+.ticket-id {
+  font-family: monospace;
+  font-weight: bold;
+  color: #555;
+}
+
+.estado-tag {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Selectores personalizados */
+.ant-select {
+  min-width: 160px;
+}
+
+.ant-select-selector {
+  border-radius: 6px !important;
+  border: 1px solid #d9d9d9 !important;
+  transition: all 0.3s ease;
+}
+
+.ant-select:hover .ant-select-selector {
+  border-color: #1890ff !important;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: #1890ff !important;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  .table-container-soporte {
+    overflow-x: auto;
+  }
+
+  .ant-select {
+    min-width: 120px;
+  }
+}
